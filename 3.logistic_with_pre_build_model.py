@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Sep 24 13:01:17 2020
-
-"""
-
-
-
 import pandas as pd
 import streamlit as st 
 from sklearn.linear_model import LogisticRegression
@@ -45,6 +37,7 @@ st.subheader('Predicted Result')
 st.write('Yes' if prediction_proba[0][1] > 0.5 else 'No')
 
 st.subheader('Prediction Probability')
+
 st.write(prediction_proba)
 
 
